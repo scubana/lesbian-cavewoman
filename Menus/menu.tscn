@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://wmaeuf728nyk"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_wp5ph"]
-[ext_resource type="FontFile" path="res://Level/VCR_OSD_MONO.ttf" id="2_twykp"]
+[ext_resource type="FontFile" uid="uid://c784h3sxa1d06" path="res://Level/VCR_OSD_MONO.ttf" id="2_twykp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h82wq"]
 
