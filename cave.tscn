@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj6h4dvhpyar7"]
+
+[ext_resource type="Texture2D" uid="uid://b5wm7feseundb" path="res://assets/cave.png" id="1_5lqyb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w6bvl"]
+size = Vector2(44.6667, 63.3333)
+
+[node name="cave" type="Node2D"]
+scale = Vector2(3, 3)
+
+[node name="cave" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="cave"]
+position = Vector2(32, 31)
+texture = ExtResource("1_5lqyb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cave"]
+position = Vector2(22.3333, 31.3333)
+shape = SubResource("RectangleShape2D_w6bvl")
