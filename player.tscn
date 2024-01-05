@@ -183,10 +183,15 @@ position = Vector2(0.5, 59.3125)
 shape = SubResource("RectangleShape2D_v6d7x")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(2, 30)
+position = Vector2(0, 40)
+limit_left = 5
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_qnsty")
 }
 autoplay = "idle"
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+position = Vector2(0, 40)
+remote_path = NodePath("../Camera2D")
