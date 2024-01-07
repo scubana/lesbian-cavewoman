@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://menu.gd" id="1_wp5ph"]
 [ext_resource type="FontFile" uid="uid://c784h3sxa1d06" path="res://Level/VCR_OSD_MONO.ttf" id="2_twykp"]
-[ext_resource type="Texture2D" uid="uid://bvqdof38ij2s6" path="res://assets/title.png" id="3_r7p1d"]
+[ext_resource type="Texture2D" path="res://assets/title.png" id="3_r7p1d"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h82wq"]
 
