@@ -1,3 +1,4 @@
+class_name PlayerEntity
 extends CharacterBody2D
 
 @export var speed = 300
@@ -8,7 +9,7 @@ extends CharacterBody2D
 @onready var sprite = $Sprite2D 
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	if !is_on_floor():
 		velocity.y += gravity 
 		if velocity.y > 1000:
@@ -28,3 +29,4 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	print(velocity)
+	

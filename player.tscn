@@ -169,8 +169,9 @@ _data = {
 "walk": SubResource("Animation_e4gey")
 }
 
-[node name="player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D" groups=["player"]]
 position = Vector2(154, 56)
+collision_layer = 3
 script = ExtResource("1_hac8v")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -184,15 +185,10 @@ position = Vector2(8, 57)
 shape = SubResource("CapsuleShape2D_yjoya")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, 40)
-limit_left = 5
+position = Vector2(2, 30)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_qnsty")
 }
 autoplay = "idle"
-
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
-position = Vector2(0, 40)
-remote_path = NodePath("../Camera2D")
