@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b15uodut8whdt"]
+[gd_scene load_steps=5 format=3 uid="uid://bj66wa2q51241"]
 
 [ext_resource type="PackedScene" uid="uid://d30uphsaeta7y" path="res://player.tscn" id="1_pbaru"]
 [ext_resource type="PackedScene" uid="uid://bm5ksmuomotn" path="res://tile_map.tscn" id="2_pbj1c"]
 [ext_resource type="PackedScene" uid="uid://cj6h4dvhpyar7" path="res://cave.tscn" id="3_e46hm"]
+[ext_resource type="PackedScene" uid="uid://oikb566ebfhe" path="res://bush.tscn" id="4_2b6hv"]
 
 [node name="world" type="Node2D"]
 
@@ -16,3 +17,6 @@ layer_0/tile_data = PackedInt32Array(589818, 786432, 0, 589819, 786432, 0, 58982
 
 [node name="cave" parent="." instance=ExtResource("3_e46hm")]
 position = Vector2(1, -16)
+
+[node name="bush" parent="." instance=ExtResource("4_2b6hv")]
+position = Vector2(407, 108)
